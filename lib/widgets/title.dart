@@ -14,13 +14,14 @@ class ArtistInfo extends StatelessWidget {
         const Text(
           "ARTIST",
           style: TextStyle(
-            color: Colors.grey,
+            color: Color.fromARGB(255, 252, 252, 252),
             fontSize: 12,
+            fontWeight: FontWeight.bold,
             shadows: [
               Shadow(
                 offset: Offset(1.0, 1.0),
-                blurRadius: 1.0,
-                color: Color.fromARGB(146, 169, 165, 165),
+                blurRadius: 30.0,
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
             ],
           ),
@@ -33,6 +34,7 @@ class ArtistInfo extends StatelessWidget {
             const Text(
               "Dua Lipa",
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
                 shadows: [
@@ -63,11 +65,12 @@ class ArtistInfo extends StatelessWidget {
         const SizedBox(
           height: 8,
         ),
-        Row(
-          children: const [
+        const Row(
+          children: [
             Text(
               "62,354,659",
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontSize: 12,
                 shadows: [
@@ -85,6 +88,7 @@ class ArtistInfo extends StatelessWidget {
             Text(
               "Monthly listeners",
               style: TextStyle(
+                color: Colors.white,
                 fontWeight: FontWeight.w500,
                 fontSize: 12,
                 shadows: [
